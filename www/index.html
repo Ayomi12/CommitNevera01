@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+    <!--
+  * Please see the included README.md file for license terms and conditions.
+  -->
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="media_button_bar/css/media_button_bar.css">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/af.ui.min.css">
+        <link rel="stylesheet" type="text/css" href="app_framework/2.1/css/icons.min.css">
+        <title>Blank App Designer Cordova Web App Project Template</title>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+
+        <!--
+  * The "meta viewport" tag (below) helps your app size appropriately to a device's ideal viewport.
+  * Note that Windows device viewports work better when initialized using the @viewport CSS rule.
+  * For a quick overview of "meta viewport" and @viewport, see this article:
+  *   http://webdesign.tutsplus.com/tutorials/htmlcss-tutorials/quick-tip-dont-forget-the-viewport-meta-tag
+  * To see how it works, try your app on a real device with and without a "meta viewport" tag.
+  * Additional useful references include:
+  *   http://www.quirksmode.org/mobile/viewports.html
+  *   http://www.quirksmode.org/mobile/metaviewport/devices.html
+  *   https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+-->
+
+        <!-- <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1"> -->
+        <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes, minimum-scale=1, maximum-scale=2"> -->
+
+        <style>
+            /* following three (cascaded) are equivalent to above three meta viewport statements */
+            /* see http://www.quirksmode.org/blog/archives/2014/05/html5_dev_conf.html */
+            /* see http://dev.w3.org/csswg/css-device-adapt/ */
+                @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }          @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
+                @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }                   @viewport { user-zoom: fixed ; min-zoom: 100% ; }
+                /*@-ms-viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }   @viewport { user-zoom: zoom ; min-zoom: 100% ; max-zoom: 200% ; }*/
+        </style>
+
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" type="text/css" href="css/index_main.less.css" class="main-less">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work below -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+
+        <!-- Recommended location for your JavaScript libraries -->
+        <!-- These library references (below) are just examples to give you the general idea... -->
+        <!-- <script src="lib/mc/hammer.js"></script> -->
+        <!-- <script src="lib/ft/fastclick.js"></script> -->
+
+        <!--
+  * cordova.js is a phantom lib for "Cordova HTML5 web app," it does nothing in a "Standard HTML5 web app"
+  * Seeing a "Failed to load resource: net::ERR_FILE_NOT_FOUND" message caused by this "cordova.js" script?
+  * The cordova.js script is required if you convert your "Standard HTML5" project into a "Cordova" project.
+  * You can safely ignore the error or comment out this line if you will not be developing a Cordova app.
+-->
+        <script src="cordova.js" id="xdkJScordova_"></script>
+
+        <script src="js/app.js"></script>
+        <!-- for your event code, see README and file comments for details -->
+        <script src="js/init-app.js"></script>
+        <!-- for your init code, see README and file comments for details -->
+        <script src="xdk/init-dev.js"></script>
+        <!-- normalizes device and document ready events, see file for details -->
+        <!--            
+            You may substitute jQuery for the App Framework selector library.
+            See http://app-framework-software.intel.com/documentation.php#afui/afui_jquery
+        -->
+        <script type="application/javascript" src="app_framework/2.1/appframework.js"></script>
+        <script type="application/javascript" src="app_framework/2.1/appframework.ui.js" data-ver="1"></script>
+        <script type="application/javascript" src="js/index_user_scripts.js"></script>
+        <script type="application/javascript" src="app_framework/themeRelease.js"></script>
+        <script type="application/javascript" src="app_framework/pageChangeRepeater.js"></script>
+        <script type="application/javascript" src="xdk/ad/af_subpage.js"></script>
+    </head>
+
+    <body id="afui" class="af">
+
+        <!-- IMPORTANT: Do not include a weinre script tag as part of your release builds! -->
+        <!-- Place your remote debugging (weinre) script URL from the Test tab here, if it does not work above -->
+        <!-- <script src="http://debug-software.intel.com/target/target-script-min.js#insertabiglongfunkynumberfromthexdkstesttab"></script> -->
+        <header class="wrapping-col wrap-element uib_w_1" data-uib="app_framework/header" data-ver="2" id="af-header-0">
+            <h1>INGRESAR</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_1 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-9" c=""><a class="button backButton" style="background-color: #AFD7A1; color: #249111; 1.    border: 1px solid #513D3D;">atras</a>
+            <h1>NEVERA</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_6 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-0 "><a class="button backButton" style="background-color: #AFD7A1; color: #249111; 1.    border: 1px solid #513D3D;">atras</a>
+            <h1>AÑADIR</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_15 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-1"><a class="button backButton" style="background-color: #AFD7A1; color: #249111; 1.    border: 1px solid #513D3D;">atras</a>
+            <h1>AGREGAR</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_16 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-2"><a class="button backButton" style="background-color: #AFD7A1; color: #249111; 1.    border: 1px solid #513D3D;">atras</a>
+            <h1>BORRAR</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_19 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-5"><a class="button backButton" style="background-color: #AFD7A1; color: #249111; 1.    border: 1px solid #513D3D;">atras</a>
+            <h1>RECETARIO</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_22 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-6"><a class="button backButton" style="background-color: #AFD7A1; color: #249111; 1.    border: 1px solid #513D3D;">atras</a>
+            <h1>MOSTRAR</h1>
+        </header>
+
+        <header class="wrapping-col wrap-element uib_w_33 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-3"><a class="button backButton">Back</a>
+            <h1>Receta</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_34 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-4"><a class="button backButton">Back</a>
+            <h1>Receta</h1>
+        </header>
+        <header class="wrapping-col wrap-element uib_w_35 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-7"><a class="button backButton">Back</a>
+            <h1>Receta</h1>
+        </header>
+        <div class="uwrap" id="content">
+            <br>
+            <br>
+            <div class="upage vertical-col panel color principal ingreso" id="mainpage" data-header="af-header-0" data-footer="af-footer-9">
+                <div class="table-thing with-label widget uib_w_2 d-margins colortxt" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" for="idUsuario">Usuario</label>
+
+                    <input class="wide-control" placeholder="ingrese usuario" type="text" id="idUsuario" value="nevera">
+                </div>
+                <div class="table-thing with-label widget uib_w_3 d-margins colortxt" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" for="idContrasenia">Constrasenia</label>
+
+                    <input class="wide-control" placeholder="ingrese contrasenia" type="text" id="idContrasenia" value="nevera">
+                </div><a class="button widget uib_w_4 d-margins icon star" data-uib="app_framework/button" data-ver="1" id="idLogin" style="margin-left: 60px; margin-top: 30px; width: 200px; height: 40px; background-color: #E7D393; border:3px solid #E4B318; text-decoration: underline; color: #EA1515; ">INGRESAR</a>
+
+            </div>
+
+            <div class="upage vertical-col panel Fondo color" id="idpagePrincipal" data-header="af-header-9" data-footer="af-footer-10"><a class="button widget uib_w_2 d-margins colorboton icon loading" data-uib="app_framework/button" data-ver="1" id="idanadir" style="margin-left: 60px; margin-top: 30px; width: 200px; height: 40px; background-color: #E7D393; border:3px solid #E4B318; text-decoration: underline; color: #EA1515; ">Añadir</a>
+                <br>
+                <br><a class="button widget uib_w_3 d-margins colorboton icon calendar" data-uib="app_framework/button" data-ver="1" id="idnavera" style=" width: 200px; height: 40px; margin-left: 60px; margin-top: 10px; background-color: #E7D393; border:3px solid #E4B318; text-decoration: underline; color: #EA1515; ">Nevera</a>
+                <br>
+                <br><a class="button widget uib_w_4 d-margins colorboton margen icon stack" data-uib="app_framework/button" data-ver="1" id="idRecetario" style="width: 200px; height: 40px; margin-left: 60px; margin-top: 10px; background-color: #E7D393; border:3px solid #E4B318; text-decoration: underline; color: #EA1515; ">Recetario</a>
+                <br>
+                <br><a class="button widget uib_w_5 d-margins colorboton icon trash" data-uib="app_framework/button" data-ver="1" id="idBorrar" style="width: 200px; height: 40px; margin-left: 60px; margin-top: 10px; background-color: #E7D393; border:3px solid #E4B318; text-decoration: underline; color: #EA1515;  ">Borrar</a>
+            </div>
+            <div class="upage vertical-col panel neveraa color style-48" id="idpageAnadir" data-header="af-header-1" data-footer="af-footer-0">
+                <div class="table-thing with-label widget uib_w_14 d-margins Color" data-uib="app_framework/select" data-ver="1">
+                    <label class="narrow-control label-inline" style="background-color: #EFD7A1; ">Tipo</label>
+
+                    <select class="wide-control">
+                        <option>Verduras</option>
+                        <option>Frutas</option>
+                        <option>Carne</option>
+                    </select>
+                </div>
+                <div class="table-thing with-label widget uib_w_10 d-margins Color" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" style="background-color: #EFD7A1;">Nombre</label>
+
+                    <input class="wide-control" placeholder="Placeholder Text" type="text">
+                </div>
+                <div class="table-thing with-label widget uib_w_11 d-margins Color" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" style="background-color: #EFD7A1;">Cantidad</label>
+                    <input class="wide-control" placeholder="Placeholder Text" type="text">
+                </div>
+                <div class="table-thing with-label widget uib_w_12 d-margins Color" data-uib="app_framework/input" data-ver="1">
+                    <label class="narrow-control label-inline" style="background-color: #EFD7A1;">Fecha</label>
+                    <input class="wide-control" placeholder="Placeholder Text" type="text">
+                </div><a class="button widget uib_w_13 d-margins icon basket" data-uib="app_framework/button" data-ver="1" style="margin-left: 60px; margin-top: 30px; width: 200px; height: 40px; background-color: #E8A6AB; border:3px solid #8E54AB; text-decoration: underline; color: #EA1515; "
+                id="idagregar">Agregar</a>
+            </div>
+            <div class="upage vertical-col panel alimentoss color agre" id="idpageNevera" data-header="af-header-1" data-footer="af-footer-0">
+                <div class="widget uib_w_24 widget-container content-area vertical-col uib-card cpad-0 d-margins" data-uib="layout/card" data-ver="0"></div>
+
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_27 d-margins media-button-text-bottom ll img" data-uib="media/graphic_button"
+                data-ver="0">
+                    <img src="images/tomate.PNG">
+                    <span class="uib-caption">Tomate</span>
+                </a>
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_28 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                    <img src="images/queso.PNG">
+                    <span class="uib-caption">Queso</span>
+                </a>
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_29 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                    <img src="images/platano.PNG">
+                    <span class="uib-caption">Platano</span>
+                </a>
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_30 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                    <img src="images/lechuga.PNG">
+                    <span class="uib-caption">Lechuga</span>
+                </a>
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_31 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                    <img src="images/leche.PNG">
+                    <span class="uib-caption">Leche</span>
+                </a>
+                <a class="uib-graphic-button default-graphic-sizing default-image-sizing hover-graphic-button active-graphic-button default-graphic-button default-graphic-text widget uib_w_32 d-margins media-button-text-bottom" data-uib="media/graphic_button" data-ver="0">
+                    <img src="images/images (17).jpg">
+                    <span class="uib-caption">Carne</span>
+                </a>
+            </div>
+            <div class="upage vertical-col panel borrarr color borr" id="idpageBorrar" data-header="af-header-2" data-footer="af-footer-1"></div>
+
+            <div class="upage vertical-col panel recetarioo color rec" id="idpageRecetario" data-header="af-header-5" data-footer="af-footer-2">
+                <div class="table-thing with-label widget uib_w_20 d-margins Color margen" data-uib="app_framework/select" data-ver="1">
+                    <label class="narrow-control label-inline" style="background-color: #EFD7A1; ">ESCOGER</label>
+
+                    <select class="wide-control">
+                        <option>Tallarin con pollo</option>
+                        <option>Chaufa</option>
+                        <option>Biste</option>
+                        <option>Chicharron</option>
+                    </select>
+                </div>
+                <a class="button widget uib_w_21 d-margins colorboton icon calendar" data-uib="app_framework/button" data-ver="1" style="margin-left: 60px; margin-top: 30px; width: 200px; height: 40px; background-color: #E8A6AB; border:3px solid #8E54AB; text-decoration: underline; color: #EA1515; "
+                id="idmostrar">Mostrar</a>
+            </div>
+            <div class="upage vertical-col panel mostrarr color mos" id="idpageMuestra_receta" data-header="af-header-6" data-footer="af-footer-3">
+
+                <div class="table-thing with-label widget uib_w_25 d-margins Color" data-uib="app_framework/textarea" data-ver="1">
+                    <textarea class="wide-control" placeholder="Placeholder Text" rows="2" wrap="soft">TALLARIN CON POLLO</textarea>
+                </div>
+                <div class="table-thing with-label widget uib_w_26 d-margins Color margen" data-uib="app_framework/textarea" data-ver="1">
+                    <textarea style="width: 300px; height: 300px;" class="wide-control" placeholder="Placeholder Text" rows="2" wrap="soft">Sazonar las presas de pollo con sal y pimienta, Poner aceite en una olla pequeña y cocinar los tomates picados añadiéndoles el azúcar y un poquito de sal. Aparte picar muy finamente la cebolla. Cuando el tomate ya haya cocinado licuarlos
+                        y pasarlos por una coladera para sacar las pepas. En otro recipiente cocinar la zanahoria con un chorrito de agua y sal durante 10 minutos hasta que se forme una pasta cremosa. Poner aceite en una olla y cocinar las “presas de
+                        pollo”, solo hasta que estén doraditas. Quitar de la olla y en ese mismo aceite freír la cebolla y los ajos luego añadir el pollo, la zanahoria también el tomate, el laurel y los hongos, probar la sal, y dejar cocinar la salsa
+                        hasta que el pollo esté bien cocido. Cocinar en una olla con agua y un poco de sal los fideos que se calcula un puñado para cada comensal unos 10 minutos. Escurrir el agua y servirlos con el pollo y la salsa encima. No olvidar
+                        espolvorear el queso parmesano y ya está listo.
+                    </textarea>
+                </div>
+            </div>
+            <div class="upage vertical-col left panel color" id="idpageMuestra_Chicharron" data-header="af-header-4" data-footer="af-footer-4"></div>
+            <div class="upage vertical-col panel color" id="idpageMuestra_Biste" data-header="af-header-7" data-footer="af-footer-5"></div>
+            <div class="upage vertical-col left panel color" id="idpageMuestra_Chaufa" data-header="af-header-3" data-footer="af-footer-6"></div>
+        </div>
+        <footer class="wrap-element uib_w_44" data-uib="app_framework/footer" data-ver="1" id="af-footer-6"></footer>
+        <footer class="wrap-element uib_w_43" data-uib="app_framework/footer" data-ver="1" id="af-footer-5"></footer>
+        <footer class="wrap-element uib_w_42" data-uib="app_framework/footer" data-ver="1" id="af-footer-4"></footer>
+        <footer class="wrap-element uib_w_41" data-uib="app_framework/footer" data-ver="1" id="af-footer-3"></footer>
+        <footer class="wrap-element uib_w_40" data-uib="app_framework/footer" data-ver="1" id="af-footer-2"></footer>
+        <footer class="wrap-element uib_w_39" data-uib="app_framework/footer" data-ver="1" id="af-footer-1"></footer>
+        <footer class="wrap-element uib_w_38" data-uib="app_framework/footer" data-ver="1" id="af-footer-0"></footer>
+        <footer class="wrap-element uib_w_37" data-uib="app_framework/footer" data-ver="1" id="af-footer-10"></footer>
+        <footer class="wrap-element uib_w_36" data-uib="app_framework/footer" data-ver="1" id="af-footer-9"></footer>
+    </body>
+
+</html>
