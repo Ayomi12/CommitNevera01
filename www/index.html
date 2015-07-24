@@ -111,6 +111,9 @@
         <header class="wrapping-col wrap-element uib_w_35 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-7"><a class="button backButton">Back</a>
             <h1>Receta</h1>
         </header>
+        <header class="wrapping-col wrap-element uib_w_45 with-back" data-uib="app_framework/header" data-ver="2" id="af-header-8"><a class="button backButton">Back</a>
+            <h1>Recetas</h1>
+        </header>
         <div class="uwrap" id="content">
             <br>
             <br>
@@ -220,9 +223,52 @@
                     </textarea>
                 </div>
             </div>
-            <div class="upage vertical-col left panel color" id="idpageMuestra_Chicharron" data-header="af-header-4" data-footer="af-footer-4"></div>
-            <div class="upage vertical-col panel color" id="idpageMuestra_Biste" data-header="af-header-7" data-footer="af-footer-5"></div>
-            <div class="upage vertical-col left panel color" id="idpageMuestra_Chaufa" data-header="af-header-3" data-footer="af-footer-6"></div>
+            <div class="upage vertical-col left panel color" id="idpageMuestra_Chicharron" data-header="af-header-4" data-footer="af-footer-4">
+                <div class="table-thing with-label widget uib_w_51 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <input class="wide-control" type="text" placeholder="CHICHARRON" value="CHICHARRON">
+                </div>
+                <div class="table-thing with-label widget uib_w_26 d-margins Color margen" data-uib="app_framework/textarea" data-ver="1">
+                    <textarea style="width: 300px; height: 300px;" class="wide-control" placeholder="Placeholder Text" rows="2" wrap="soft">PREPARACION: Cortar la carne de cerdo en trozos y macerar desde la víspera con sal. Colocar la carne en una olla y cubrir con agua. Hervir, tapado, a fuego lento, hasta que el agua se consuma. Destapar la olla y dejar freir en su misma
+                        grasa hasta que esté dorado y la carne esté tierna. Pelar los camotes y cortar en rebanadas delgadas. Freir en abundante aceite hasta que estén cocidos.
+                    </textarea>
+                </div>
+            </div>
+            <div class="upage vertical-col panel color" id="idpageMuestra_Biste" data-header="af-header-7" data-footer="af-footer-5">
+                <div class="table-thing with-label widget uib_w_51 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <input class="wide-control" type="text" placeholder="BISTE" value="BISTE">
+                </div>
+                <div class="table-thing with-label widget uib_w_26 d-margins Color margen" data-uib="app_framework/textarea" data-ver="1">
+                    <textarea style="width: 300px; height: 300px;" class="wide-control" placeholder="Placeholder Text" rows="2" wrap="soft">PREPARACION: Preparar el arroz de la forma acostumbrada con ajos, agua y sal. Batir los huevos ligeramente, agregarles 1 cucharada de leche, sazonarlos y freírlos en una sartén con aceite. Una vez que la tortilla esté lista, retirarla
+                        de la sartén y cortarla en trozos de 1 cm (½ pulgadas). Freír el tocino a fuego mediano, en una sartén sin grasa hasta que esté cocido pero no crocante. Retirarlo de la sartén y escurrirlo en papel absorbente. En la misma grasa
+                        del tocino freír el ajo y el kion. Subir el fuego y agregar la cebollita china y el pimiento. Cocinar unos minutos. Incorporar luego el sillao, el pollo, la tortilla en trozos y ají no moto. Mezclar todo. Si estuviera muy seco,
+                        agregar 1 cucharada de agua hirviendo. Agregar por último el arroz, y mezclar bien. Servir bien caliente y de inmediato.
+                    </textarea>
+                </div>
+            </div>
+            <div class="upage vertical-col left panel color" id="idpageMuestra_Chaufa" data-header="af-header-3" data-footer="af-footer-6">
+                <div class="table-thing with-label widget uib_w_51 d-margins" data-uib="app_framework/input" data-ver="1">
+                    <input class="wide-control" type="text" placeholder="CHAUFA" value="CHAUFA">
+                </div>
+                <div class="table-thing with-label widget uib_w_26 d-margins Color margen" data-uib="app_framework/textarea" data-ver="1">
+                    <textarea style="width: 300px; height: 300px;" class="wide-control" placeholder="Placeholder Text" rows="2" wrap="soft">PREPARACION: Sazonar la carne con sal, pimienta y ajo; calentar el aceite en una sartén y freír los bistecs hasta que estén dorados por ambos lados; retirarlos y, en la misma sartén, freír las salchichas y los plátanos partidos en
+                        mitades. Servir en cada plato una taza de Arroz, 2 mitades de plátano, 2 mitades de salchichas, una porción de papas fritas, un bistec y un huevo montado.
+                    </textarea>
+                </div>
+            </div>
+            <div class="upage vertical-col panel" id="idpageReceta" data-header="af-header-8" data-footer="none">
+                <ul class="list widget uib_w_46 d-margins" data-uib="app_framework/listview" data-ver="1" id="idListaReceta">
+                    <li class="widget uib_w_47" data-uib="app_framework/listitem" data-ver="1"><a href="#idpageMuestra_Chaufa">Chaufa</a>
+                    </li>
+                    <li class="widget uib_w_48" data-uib="app_framework/listitem" data-ver="1"><a href="#idpageMuestra_Biste">Biste</a>
+                    </li>
+                    <li class="widget uib_w_49" data-uib="app_framework/listitem" data-ver="1"><a href="#idpageMuestra_Chicharron">Chicharron</a>
+                    </li>
+                </ul>
+                <ul class="list widget uib_w_52 d-margins" data-uib="app_framework/listview" data-ver="1">
+                    <li class="widget uib_w_53" data-uib="app_framework/listitem" data-ver="1" id="idListaReceta"><a href="#idpageMuestra_receta">Tallarin con pollo</a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <footer class="wrap-element uib_w_44" data-uib="app_framework/footer" data-ver="1" id="af-footer-6"></footer>
         <footer class="wrap-element uib_w_43" data-uib="app_framework/footer" data-ver="1" id="af-footer-5"></footer>

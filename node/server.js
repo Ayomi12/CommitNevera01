@@ -1,4 +1,4 @@
-var IPADDRESS="192.168.159.1";
+var IPADDRESS="192.168.56.1";
 var PORT=9095
 var express = require('express');
 var bodyParser = require('body-parser');
@@ -24,34 +24,66 @@ app.post('/getLogin', function(req, res){
     var data=req.param('data');
     data=JSON.parse(data);
     //console.log(data);
-	
-    if(data.usuario!=="nevera" || data.contrasenia!=="nevera"){
+   
+   if(data.usuario=="nevera" && data.contrasenia=="nevera"){
+        var user={}
+    	user.id=1;
+    	user.usuario='nevera';
+    	user.contasenia='nevera';
 
-	var msn={};
+		var msn={};	
+		msn.data=user;
+		msn.status=1;	
+    }
+    else{
+    	var msn={};
 	msn.data=null;	
 	msn.status=0;
 	msn.message="NO AUTENTICADO";
-
-
-    }
-    else{
-
-	var user={}
-    	user.id=1;
-    	user.usuario='nevera';
-
-	var msn={};
-	msn.data=user;	
-	msn.status=1;
-	msn.message=null;
-	
-   }				
+    }				
 	    
 	res.json(msn);
 	
 });
 
 
+app.post('/getReceta', function(req, res){	
+
+    	var data=req.param('data');
+	data=JSON.parse(data); 
+	  	
+    var receta1={}
+    	receta1.id=1;
+    	receta1.nombre='Chicharron';
+	    
+	var receta2={}
+    	producto2.id=2;
+    	producto2.nombre='Chaufa';
+	
+	var receta3={}
+    	receta3.id=3;
+    	receta3.nombre='Biste';
+
+	var receta4={}
+    	receta4.id=4;
+    	receta4.nombre='Tallarin con pollo';
+    	
+	var recetas=[];
+	recetas[0]=receta1;
+	recetas[1]=receta2;
+	recetas[2]=receta3;
+	recetas[3]=receta4;
+	
+	var msn={};
+	msn.data=recetas;	
+	msn.status=1;
+	msn.message=null;
+	
+	res.json(msn);
+
+});
+
+/*
 app.post('/getRecetario', function(req, res){	
 
     	var data=req.param('data');
@@ -62,22 +94,21 @@ app.post('/getRecetario', function(req, res){
     var user={}
     	user.id=1;
     	user.nombre='Tallarin con pollo';
-	    user.ciclo=ciclo;
     
 	var user1={}
     	user1.id=2;
     	user1.nombre='Chaufa';
-	    user1.ciclo=ciclo;
+	   
 
 	var user2={}
     	user2.id=1;
     	user2.nombre='Biste';
-	    user2.ciclo=ciclo;
+	   
     
 	var user3={}
     	user3.id=2;
     	user3.nombre='Chicharron';
-	    user3.ciclo=ciclo;
+	    
     
 	var users=[];
 	users[0]=user;
@@ -94,7 +125,7 @@ app.post('/getRecetario', function(req, res){
 	
 });
 
-/*
+
 app.post('/getAgregar', function(req, res){	
 
     	var data=req.param('data');
@@ -138,4 +169,3 @@ app.post('/getAgregar', function(req, res){
 });
 
 */
-

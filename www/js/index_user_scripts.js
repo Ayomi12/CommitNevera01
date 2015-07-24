@@ -6,9 +6,11 @@
  */
  function register_event_handlers()
  {
+     
+     
      $("body").append('<a id="idGoAnadir_nevera" href="#idpageAnadir"  class="style-31"></a>');
      $("body").append('<a id="idGoNevera_nevera" href="#idpageNevera"  class="style-31"></a>');
-     $("body").append('<a id="idGoRecetario_nevera" href="#idpageRecetario"  class="style-31"></a>');
+     $("body").append('<a id="idGoMuestra" href="#idpageReceta"  class="style-31"></a>');
      $("body").append('<a id="idGoBorrar_nevera" href="#idpageBorrar"  class="style-31"></a>');
      $("body").append('<a id="idGoAgregar_nevera" href="#idpageNevera"  class="style-31"></a>');
      $("body").append('<a id="idGoMostrar_nevera" href="#idpageMuestra_receta"  class="style-31"></a>');
@@ -35,13 +37,13 @@
             //dataType : 'json',
             dataType : 'text',
             success:function(data){
-                var data=JSON.parse(data);
-                console.log(data.status);
+            var data=JSON.parse(data);
+            console.log(data.status);
                 
                 if(data.status===1){
                      
                      navigator.notification.confirm(
-                        'INGRESASTE',  // message
+                        'INGRESASTE...!!',  // message
                         function(){
                             $("#idGoprincipal_nevera").click();
                         },         // callback
@@ -52,7 +54,7 @@
                 }
                 if(data.status===0){
                     
-                     navigator.notification.alert(
+                     navigator.notification.confirm(
                         'ACCCESO DENEGADO',  // message
                         function(){},         // callback
                         'Mensaje',            // title
@@ -84,12 +86,6 @@
         $("#idGoNevera_nevera").click(); 
     });
     
-        /* button  #idRecetario */
-    $(document).on("click", "#idRecetario", function(evt)
-    {
-        $("#idGoRecetario_nevera").click(); 
-    });
-    
         /* button  #idBorrar */
     $(document).on("click", "#idBorrar", function(evt)
     {
@@ -99,6 +95,7 @@
         /* button  #idagregar */
     $(document).on("click", "#idagregar", function(evt)
     {
+        alert("agregaste correctamente");
         $("#idGoAgregar_nevera").click(); 
     });
     
@@ -106,6 +103,17 @@
     $(document).on("click", "#idmostrar", function(evt)
     {
         $("#idGoMostrar_nevera").click(); 
+    });
+    
+        /* button  #idRecetario */
+     
+     //Receta.crearEnlaces();
+    $(document).on("click", "#idRecetario", function(evt)
+    {    
+        /* your code goes here */ 
+        $("#idGoMuestra").click();
+        Receta.cargarReceta();
+            
     });
     
     }
